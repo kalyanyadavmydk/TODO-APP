@@ -12,7 +12,9 @@ app.use(bodyparser.json())
 app.use('/api',require('./routes/todo'))
 app.use('/api/user',require('./routes/user'))
 
-
+// creating Server
 app.listen(3000,()=>{
     console.log("server stared successfully")
 })
+
+
