@@ -1,0 +1,16 @@
+<div *ngIf="tasks[0]; else notasks" class="main-card">
+    <div *ngFor="let task of tasks" class="task-card">
+        <ul>
+            <li>{{task.taskname}}</li>
+            <li>{{task.type}}</li>
+            <li>{{task.duedate | date:'shortDate'}}</li>
+            <li>  <a [routerLink]="['/editTask',task._id]">EDIT</a> </li>
+        <li> <button (click)="deleteTask(task._id)">DELETE</button> </li>
+        </ul>
+        
+    </div>
+</div>
+
+<ng-template #notasks>
+    No Tasks
+</ng-template>

@@ -1,0 +1,20 @@
+<html>
+    <head></head>
+    <body>
+        <div class="header">
+            <ul class="loggedin">
+                <li *ngIf="tokenStatus===true"><a routerLink="/" >Home</a></li>
+                <li *ngIf="tokenStatus===true"><a routerLink="/display">My Work</a></li>
+                <li *ngIf="tokenStatus===true" ><a routerLink="/create" >Add Task</a></li>
+            </ul>
+            <ul class="loggedout">
+                <li *ngIf="tokenStatus===false"><a href="/login">Log In</a></li>
+                <li *ngIf="tokenStatus===false"><a href="/signup">Sign Up</a></li>
+                <li *ngIf="tokenStatus===true"><button (click)="logOut()">Log Out</button></li>
+            </ul>
+        </div> 
+    </body>
+</html>
+
+
+

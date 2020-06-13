@@ -1,0 +1,59 @@
+
+
+.header{
+  height: 75px;
+  width: 100%;
+}
+
+
+
+
+ul{
+  margin-top: 30px;
+    list-style-type: none;
+}
+
+.loggedin{
+    float: left;
+}
+
+.loggedout{
+    float: right;
+}
+li{
+    display: inline-block
+}
+
+a{
+    text-decoration:none;
+    border:2px solid white;
+    padding:10px;
+    margin-left:5px;
+    margin-right:5px;
+    color:white;
+   
+  }
+  a:hover {
+    background-color:white;
+    color:black
+  }
+  
+
+  button{
+    background-color:grey;
+    color:red;
+    cursor:pointer;
+    font-family: "Lucida Console", Courier, monospace;
+    width:130px;
+    height:40px;
+    border-radius:20px;
+    padding:10px 10px;
+    border:none;
+    font-size:20px;
+    margin-top: 0px;
+  }
+
+  button:hover{
+    color: black;
+    background-color: white;
+  }

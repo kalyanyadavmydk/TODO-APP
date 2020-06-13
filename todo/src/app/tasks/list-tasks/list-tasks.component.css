@@ -1,0 +1,33 @@
+
+.task-card
+{
+    
+    width: 100%;
+
+    height: 75px;
+    
+    border: 1px solid white ;
+    
+    margin: 10px;
+
+    float: right;
+}
+
+.task-card:hover
+{
+    background-color: white;
+}
+
+ul
+{
+    list-style-type: none ;
+}
+
+li
+{
+    display: inline-block;
+    color: cadetblue;
+    padding: 10px;
+    font-size: 30px;
+    margin-left: 80px;
+}

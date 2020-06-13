@@ -1,0 +1,19 @@
+
+
+<html>
+  <body>
+    <div class="card1">
+        <h1>Sign Up</h1>
+        <form (submit)="onSignUp(signupform)" #signupform="ngForm">
+            <div class="logincard">
+                <input type="email" id="email" placeholder="enter your email" name="email" ngModel required><br>
+                <input type="password" id="password" placeholder="password" name="password" ngModel required ><br>
+                <input type="password" id="password" placeholder="Re-Enter Password" name="password2" ngModel required ><br>
+                <button  id="button" type="submit"> Sign Up</button>
+            </div>
+        </form>
+
+    </div>
+  </body>
+</html>
+

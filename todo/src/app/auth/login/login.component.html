@@ -1,0 +1,18 @@
+
+<html>
+  <body>
+    <div class="card1">
+        <h1>Sign In</h1>
+        <form (submit)="onLogIn(loginform)" #loginform="ngForm">
+            <div class="logincard">
+                <input type="email" id="email" placeholder="enter your email" name="email" ngModel required><br>
+                <input type="password" id="password" placeholder="password" name="password" ngModel required ><br>
+                <button  id="button" type="submit"> Log In</button>
+            </div>
+        </form><br>
+        <a href="#" style="float: left; margin-left: 25px; ">I Forgot My Password</a><br><br>
+        <a  routerLink="/signup" style="float: right; margin-right: 25px;">Create Account</a>
+    </div>
+  </body>
+</html>
+

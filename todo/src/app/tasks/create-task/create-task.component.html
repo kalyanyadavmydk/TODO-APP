@@ -1,0 +1,26 @@
+
+<html>
+    <body>
+
+        <div   class="form">
+            <form (submit)="addTask(taskdata)" #taskdata="ngForm">
+                <input type="text" placeholder="Task Name........" name="taskname" [ngModel]="task?.taskname" required>
+                
+                <label for="cars">Choose a car:</label>
+                <select name="cars" [ngModel]="task?.type" id="cars">
+                  <option  value="personal"   >Personal</option>
+                  <option   value="work"  >Work</option>
+                  <option   value="shopping"  >Shopping</option>
+                  <option   value="other"   required>Other</option>
+                </select>
+
+                <input type="date" name="duedate" [ngModel]="task?.duedate" required>
+                <button type="submit">Add</button>
+            </form>
+        </div>
+
+
+
+
+    </body>
+</html>
